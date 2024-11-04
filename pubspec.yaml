@@ -33,3 +33,5 @@ scripts:
   generate-code: flutter pub run build_runner watch --delete-conflicting-outputs
   generate-code-one: flutter pub run build_runner build --delete-conflicting-outputs
   run-android-ui-test: ./ui_test/run_android_ui_test.sh
+  run-ios-ui-test: ./ui_test/run_ios_ui_test.sh
+  run-ui-test: ./run_ui_test.sh

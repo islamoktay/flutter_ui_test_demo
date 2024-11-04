@@ -1,0 +1,28 @@
+appId: com.example.flutterUiTestDemo
+---
+- launchApp
+- assertVisible: "Splash View"
+- assertVisible:
+      id: "posts-tab"
+- assertVisible:
+      id: "users-tab"
+- scrollUntilVisible:
+      element:
+          id: "users3"
+      direction: DOWN
+- assertVisible:
+      id: "users3"
+- tapOn:
+      id: "users3"
+- tapOn:
+      id: "website"
+- assertVisible:
+      id: "TopBrowserBar"
+- tapOn: "Done"
+- tapOn: "Back"
+- tapOn:
+      id: "posts-tab"
+- scrollUntilVisible:
+      element:
+          id: "post12"
+      direction: DOWN
