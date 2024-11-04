@@ -31,7 +31,7 @@ class PostsView extends StatelessWidget {
                       separatorBuilder: (_, __) => const SizedBox(height: 8),
                       itemCount: data.posts!.length,
                       itemBuilder: (context, index) => Semantics(
-                        identifier: 'post${data.posts![index]}',
+                        identifier: 'post$index',
                         child: ListTile(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16),

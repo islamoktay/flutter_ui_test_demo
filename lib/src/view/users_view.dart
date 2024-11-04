@@ -32,7 +32,7 @@ class UsersView extends StatelessWidget {
                       separatorBuilder: (_, __) => const SizedBox(height: 8),
                       itemCount: data.users!.length,
                       itemBuilder: (context, index) => Semantics(
-                        identifier: 'users${data.users![index]}',
+                        identifier: 'users$index',
                         child: ListTile(
                           onTap: () => context.router
                               .push(UserDetailRoute(user: data.users![index])),

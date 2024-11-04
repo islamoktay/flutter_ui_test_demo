@@ -22,9 +22,21 @@ class BaseView extends StatelessWidget {
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: tabsRouter.activeIndex,
             onTap: tabsRouter.setActiveIndex,
-            items: const [
-              BottomNavigationBarItem(icon: Icon(Icons.person), label: 'users'),
-              BottomNavigationBarItem(icon: Icon(Icons.feed), label: 'posts'),
+            items: [
+              BottomNavigationBarItem(
+                icon: Semantics(
+                  identifier: 'users-tab',
+                  child: const Icon(Icons.person),
+                ),
+                label: 'users',
+              ),
+              BottomNavigationBarItem(
+                icon: Semantics(
+                  identifier: 'posts-tab',
+                  child: const Icon(Icons.feed),
+                ),
+                label: 'posts',
+              ),
             ],
           ),
           body: child,

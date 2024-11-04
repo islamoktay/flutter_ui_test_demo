@@ -1,0 +1,29 @@
+appId: com.example.flutter_ui_test_demo
+---
+- launchApp
+- assertVisible: "Splash View"
+- assertVisible:
+      id: "posts-tab"
+- assertVisible:
+      id: "users-tab"
+- scrollUntilVisible:
+      element:
+          id: "users3"
+      direction: DOWN
+- assertVisible:
+      id: "users3"
+- tapOn:
+      id: "users3"
+- tapOn:
+      id: "website"
+- assertVisible:
+      id: "com.android.chrome:id/toolbar"
+- tapOn:
+      id: "com.android.chrome:id/close_button"
+- tapOn: "Back"
+- tapOn:
+      id: "posts-tab"
+- scrollUntilVisible:
+      element:
+          id: "post12"
+      direction: DOWN
