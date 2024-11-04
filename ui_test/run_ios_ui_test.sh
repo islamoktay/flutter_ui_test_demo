@@ -6,4 +6,4 @@ xcrun simctl install Booted build/ios/iphonesimulator/Runner.app
 
 maestro test ui_test/ios_flow.yaml
 
-xcrun simctl shutdown all
+osascript -e 'tell application "Simulator" to quit'
